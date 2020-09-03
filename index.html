@@ -5,43 +5,40 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Registro UFM</title>
+  <title>Menu</title>
   
   <!-- HTML -->
   
 
   <!-- Custom Styles -->
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Poppins:400,800,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<!-- volver a poner "required" en los input despues del id-->
+
 <body>
-  <form action="" method="POST" id="form">
-      <h1>Registro UFM</h1>
-      <div class="grupo">
-        <input type="text" name="" id="name"><span class="barra"></span>
-        <label>Nombre</label>
-      </div>
-      <div class="grupo">
-        <input type="text" name="" id="apellidos"><span class="barra"></span>
-        <label>Apellidos</label>
-      </div>
-      <div class="grupo">
-        <input type="email" name="" id="email"><span class="barra"></span>
-        <label>Email</label>
-      </div>
-      <div class="grupo">
-        <input type="password" name="" id="password"><span class="barra"></span>
-        <label>password</label>
-        <!--<div class="grupo">
-        <textarea name="" id="" rows="3" required></textarea><span class="barra"></span>
-        <label>Email</label>
-      </div>-->
-        <button type="submit">Registrarse</button>
-        <p class="warnings" id="warnings"></p>
-      </div>
-    </form>
-  <!-- Project -->
-  <script src="main.js"></script>
+  <div class="contenedor-menu">
+    <a href="#"class="btn-menu">Menu<i class="icono fa fa-bars"></i></a>
+    <ul class="menu">
+      <li><a href="#"><i class="icono izquierda fa fa-home"></i>Inicio</a></li>
+      <li class="activado"><a href="#"><i class="icono izquierda "></i>Eventos<i class="icono derecha fa fa-chevron-down"></i></a>
+      <ul>
+        <li><a href="#">Fms</a></li>
+        <li><a href="#">Red Bull</a></li>
+      </ul>
+      </li>
+      <li class="activado"><a href="#"><i class="icono izquierda fa fa-star"></i>Top Mc's<i class="icono derecha fa fa-chevron-down"></i></a>
+      <ul>
+        <li><a href="#">México</a></li>
+        <li><a href="#">Argentina</a></li>
+      </ul>
+      </li>
+      <li><a href="#"><i class="icono izquierda fa fa-envelope"></i>Contactar</a></li>
+    </ul>
+  </div>
+  
+  
+  <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
